@@ -3,98 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Printing for Architects</title>
+  <title>Filment Bars</title>
   <style>
-    /* Basic Reset */
-    body, h1, p {
+    /* General Reset */
+    body, h1, h2, p {
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
 
-    /* General Styles */
+    /* Page Layout */
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
       background-color: #f4f4f4;
       color: #333;
-      text-align: center;
-    }
-
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px 0;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
       background-color: white;
+      padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
     }
 
-    .description {
+    /* Header Section */
+    .header {
+      text-align: center;
       margin-bottom: 20px;
     }
 
-    .description h2 {
+    .header h1 {
       font-size: 2rem;
-      margin-bottom: 10px;
       color: #0077b6;
     }
 
-    .description p {
-      font-size: 1.1rem;
+    /* Burning Section */
+    .burning-section {
+      margin-bottom: 20px;
+    }
+
+    .burning-section h2 {
+      font-size: 1.5rem;
+      color: #023e8a;
+      margin-bottom: 10px;
+    }
+
+    .burning-section p {
+      font-size: 1rem;
       color: #555;
     }
 
-    iframe {
+    /* Text Boxes */
+    .text-box {
       width: 100%;
-      height: 800px;
-      border: none;
-      margin-top: 20px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px dashed #0077b6;
+      border-radius: 5px;
+      background-color: #e9ecef;
+      color: #333;
+      font-size: 1rem;
+      text-align: center;
     }
 
-    footer {
-      margin-top: 30px;
-      padding: 10px;
-      background-color: #0077b6;
-      color: white;
-      font-size: 0.9rem;
+    /* Tutorials Section */
+    .tutorials-section {
+      margin-bottom: 20px;
+    }
+
+    .tutorials-section h2 {
+      font-size: 1.5rem;
+      color: #023e8a;
+      margin-bottom: 10px;
+    }
+
+    /* YT Section */
+    .yt-section {
+      margin-bottom: 20px;
+    }
+
+    .yt-section h2 {
+      font-size: 1.5rem;
+      color: #023e8a;
+      margin-bottom: 10px;
+    }
+
+    /* Title Section */
+    .title-section {
+      text-align: center;
+    }
+
+    .title-section h2 {
+      font-size: 1.5rem;
+      color: #023e8a;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>3D Printing for Architects</h1>
-  </header>
-
   <div class="container">
-    <section class="description">
-      <h2>Your Vision, Our Precision</h2>
-      <p>
-        Welcome to our 3D printing service tailored for architecture students at Texas A&M University. 
-        Submit your project details below, and we'll bring your designs to life!
-      </p>
-    </section>
+    <!-- Header -->
+    <div class="header">
+      <h1>Filment Bars</h1>
+    </div>
 
-    <!-- Replace with your Google Form embed code -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfExampleForm/viewform?embedded=true" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0">
-      Loading…
-    </iframe>
+    <!-- Burning Section -->
+    <div class="burning-section">
+      <h2>Burning</h2>
+      <div class="text-box">Rearwind in 20</div>
+      <div class="text-box">Lemture (heat)</div>
+    </div>
+
+    <!-- Text Section -->
+    <div class="text-box">Text</div>
+    <div class="text-box">Text</div>
+    <div class="text-box">Text</div>
+
+    <!-- Tutorials Section -->
+    <div class="tutorials-section">
+      <h2>Tutorils</h2>
+      <div class="text-box">Yt</div>
+      <div class="text-box">Yt</div>
+      <div class="text-box">Yt</div>
+    </div>
+
+    <!-- Title Section -->
+    <div class="title-section">
+      <h2>TITLE</h2>
+      <h2>TITLE</h2>
+      <h2>TITLE</h2>
+    </div>
   </div>
-
-  <footer>
-    <p>&copy; 2023 3D Printing for Architects. All rights reserved.</p>
-  </footer>
 </body>
 </html>
