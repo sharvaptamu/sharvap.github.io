@@ -3,142 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Filment Bars</title>
+  <title>Smooth Scroll Example</title>
   <style>
-    /* General Reset */
+    /* Basic Reset */
     body, h1, h2, p {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
     }
 
-    /* Page Layout */
+    /* General Styles */
     body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       background-color: #f4f4f4;
       color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 50px 0;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
     }
 
     .container {
-      background-color: white;
+      max-width: 800px;
+      margin: 20px auto;
       padding: 20px;
+      background-color: white;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-      width: 100%;
     }
 
-    /* Header Section */
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
+    .section {
+      margin: 100px 0;
+      padding: 20px;
+      background-color: #e9ecef;
+      border-radius: 8px;
     }
 
-    .header h1 {
+    .section h2 {
       font-size: 2rem;
+      margin-bottom: 10px;
       color: #0077b6;
     }
 
-    /* Burning Section */
-    .burning-section {
-      margin-bottom: 20px;
-    }
-
-    .burning-section h2 {
-      font-size: 1.5rem;
-      color: #023e8a;
-      margin-bottom: 10px;
-    }
-
-    .burning-section p {
-      font-size: 1rem;
+    .section p {
+      font-size: 1.1rem;
       color: #555;
     }
 
-    /* Text Boxes */
-    .text-box {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 2px dashed #0077b6;
+    .scroll-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
       border-radius: 5px;
-      background-color: #e9ecef;
-      color: #333;
-      font-size: 1rem;
-      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    /* Tutorials Section */
-    .tutorials-section {
-      margin-bottom: 20px;
+    .scroll-button:hover {
+      background-color: #023e8a;
     }
 
-    .tutorials-section h2 {
-      font-size: 1.5rem;
-      color: #023e8a;
-      margin-bottom: 10px;
-    }
-
-    /* YT Section */
-    .yt-section {
-      margin-bottom: 20px;
-    }
-
-    .yt-section h2 {
-      font-size: 1.5rem;
-      color: #023e8a;
-      margin-bottom: 10px;
-    }
-
-    /* Title Section */
-    .title-section {
-      text-align: center;
-    }
-
-    .title-section h2 {
-      font-size: 1.5rem;
-      color: #023e8a;
-      margin-bottom: 10px;
+    /* Smooth Scroll Behavior */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <a href="#section1" class="scroll-button">Scroll to Section 1</a>
+  </header>
+
   <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <h1>Filment Bars</h1>
-    </div>
+    <section id="section1" class="section">
+      <h2>Section 1</h2>
+      <p>This is the first section of the page. The button above will smoothly scroll you here!</p>
+      <a href="#section2" class="scroll-button">Scroll to Section 2</a>
+    </section>
 
-    <!-- Burning Section -->
-    <div class="burning-section">
-      <h2>Burning</h2>
-      <div class="text-box">Rearwind in 20</div>
-      <div class="text-box">Lemture (heat)</div>
-    </div>
+    <section id="section2" class="section">
+      <h2>Section 2</h2>
+      <p>This is the second section of the page. You can scroll back up or down to other sections.</p>
+      <a href="#section3" class="scroll-button">Scroll to Section 3</a>
+    </section>
 
-    <!-- Text Section -->
-    <div class="text-box">Text</div>
-    <div class="text-box">Text</div>
-    <div class="text-box">Text</div>
-
-    <!-- Tutorials Section -->
-    <div class="tutorials-section">
-      <h2>Tutorils</h2>
-      <div class="text-box">Yt</div>
-      <div class="text-box">Yt</div>
-      <div class="text-box">Yt</div>
-    </div>
-
-    <!-- Title Section -->
-    <div class="title-section">
-      <h2>TITLE</h2>
-      <h2>TITLE</h2>
-      <h2>TITLE</h2>
-    </div>
+    <section id="section3" class="section">
+      <h2>Section 3</h2>
+      <p>This is the third section of the page. Feel free to add more content here!</p>
+      <a href="#" class="scroll-button">Back to Top</a>
+    </section>
   </div>
 </body>
 </html>
