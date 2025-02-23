@@ -65,8 +65,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Filament Bros 3D Printing",
+        "meta_descr": "Affordable, Reliable, & Quick 3D Prints By Students, For Students.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
